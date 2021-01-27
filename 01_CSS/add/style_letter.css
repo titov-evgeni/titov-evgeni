@@ -1,0 +1,15 @@
+#head {
+    text-align: right;
+}
+#text {
+    text-align: justify;
+    text-indent: 5mm;
+    font-family: Bad Script, cursive;
+}
+h3 {
+    text-decoration: underline;
+}
+#all{
+    margin-right : 3%;
+    margin-left: 3%;
+}
