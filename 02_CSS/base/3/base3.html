@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset=UTF-8>
+    <title>Страница с блоками</title>
+   <style>
+	   	.wrap{
+			background: #eeefef;
+		}
+		.leftBlock{
+			width: 15em;
+			background-color: #cdcdcd;
+			float: left;	
+			overflow: hidden;		
+		}
+		.rightBlock{
+			background-color: #abacac;
+			margin-bottom: .2em;
+			overflow: hidden;	
+		}
+		.footer{
+			background-color: #cdcdcd;
+			clear: both;
+		}
+		img{
+			float: right;
+		}
+   </style>
+  </head>
+  <body>
+  	<div class="wrap">
+		<div class="leftBlock">
+			<h3>Блок навигации</h3>
+			<ul>
+				<li>Ширина 15em</li>
+				<li>Должен присутствовать цвет фона</li>
+				<li>Располагается слева</li>
+				<li>Блок навигации наполните контентом достаточным,чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+			</ul>
+		</div>
+		<div class="rightBlock">
+			<h3>Статья 1</h3>
+			Размер блока:<br>
+			Занимает всю доступную ширину<br>
+			Должен присутствовать цвет фона<br>
+			Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+		</div>
+		<div class="rightBlock">
+			<h3>Статья 2</h3>
+			Размер блока:<br>
+			Занимает всю доступную ширину<br>
+			Должен присутствовать цвет фона<br>
+			Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.
+			<img src="icon_mail.png" alt="Написать письмо">
+		</div>
+		<div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</div>
+	</div>
+  </body>
+</html>

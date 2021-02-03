@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset=UTF-8>
+    <title>Страница с блоками flex</title>
+   	<style>
+	   	.wrap{
+			background: #eeefef;
+		}
+	   .row{
+			display: flex;
+		    flex-grow: 1;
+			align-items: flex-start;
+		}
+	   .column1{
+		    flex-direction: column;
+		}
+	   .column2{
+		   flex-direction: column;
+		}
+	   .column2 div{
+		   background-color: #abacac;
+		   margin-bottom: .2em;
+		   overflow: hidden;
+		}
+		.leftBlock{
+			flex-shrink: 0;
+			flex-basis: 15em;
+			background-color: #cdcdcd;
+			overflow: hidden;
+		}
+		.footer{
+			flex-grow: 0;
+			background-color: #cdcdcd;
+		}
+		img{
+			float: right;
+		}
+   	</style>
+  </head>
+  <body>
+  	<div class="wrap">
+		<div class="column1">
+			<div class="row">
+				<div class="leftBlock">
+					<h3>Блок навигации</h3>
+					<ul>
+						<li>Ширина 15em</li>
+						<li>Должен присутствовать цвет фона</li>
+						<li>Располагается слева</li>
+						<li>Блок навигации наполните контентом достаточным,чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере</li>
+					</ul>
+				</div>
+				<div class="column2">
+					<div>
+						<h3>Статья 1</h3>
+						Размер блока:<br>
+						Занимает всю доступную ширину<br>
+						Должен присутствовать цвет фона<br>
+						Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom
+					</div>
+					<div>
+						<h3>Статья 2</h3>
+						Размер блока:<br>
+						Занимает всю доступную ширину<br>
+						Должен присутствовать цвет фона<br>
+						Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-bottom Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой картинки.
+						<img src="icon_mail.png" alt="Написать письмо">
+					</div>
+				</div>
+			</div>
+			<div class="footer">Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.</div>
+		</div>
+	</div>
+  </body>
+</html>
